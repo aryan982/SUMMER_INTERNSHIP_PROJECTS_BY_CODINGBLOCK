@@ -1,0 +1,485 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.logo {
+    background-color: #009688;
+    color: white;
+}
+
+.logo:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Search button alignment */
+.nav-right .search-btn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    margin-top: 46px; 
+    width: 100%;
+    height: calc(100vh - 46px);
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(110%);
+}
+
+/* Section Wrapper */
+.team-section {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+/* Titles */
+.team-title {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.team-subtitle {
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Card layout for each member */
+.team-member {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.member-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Names and Roles Styling */
+.member-name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Main Section Layout using Flexbox */
+.work-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 24px;
+    align-items: flex-start;
+    background-color: #333333;
+}
+
+/* Left side text container */
+.work-desc-col {
+    flex: 1;
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.section-text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cards-container {
+    display: flex;
+    flex: 3;
+    gap: 16px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* card texts */
+.card-content {
+    padding: 24px 16px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.card-subtitle {
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+/* Outer section wrapper */
+.pricing-section {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.section-title { 
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 48px;
+}
+
+/* Flex layout for three column alignment */
+.pricing-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  pricing card styling */
+.pricing-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+
+.pricing-card.highlighted {
+    opacity: 0.85; 
+    opacity: 1;
+}
+
+/* Alternating Card Header Colors */
+.card-header {
+    padding: 24px 0;
+    color: #ffffff;
+}
+
+.card-header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-grey {
+    background-color: #616161; /* Matte gray for Pro plan */
+}
+
+/* Features List layout */
+.card-features {
+    list-style: none;
+}
+
+.card-features li {
+    padding: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Pricing Area block */
+.card-price {
+    padding: 32px 0;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #ffffff;
+}
+
+.card-price .amount {
+    font-size: 48px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.card-price .period {
+    font-size: 15px;
+    color: #8c8c8c;
+    margin-top: 8px;
+}
+
+/* Footer & Button blocks */
+.card-footer {
+    background-color: #f1f1f1; 
+    padding: 24px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.signup-btn {
+    background-color: #009688; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.signup-btn i {
+    margin-right: 4px;
+}
+.signup-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body .contact-section{
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* form section */
+.contact-section {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #f1f1f1;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; 
+}
+
+/* Left Column Styling */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  color: #000;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Teal underline accent */
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  background-color: #005f54;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.info-list .icon {
+  color: #005f54; 
+  font-size: 18px;
+  width: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* --- Right Column Card Styling --- */
+.contact-form-card {
+  flex: 2;
+  min-width: 320px;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.form-group {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc; 
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 6px 0;
+  font-size: 15px;
+  background: transparent;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  accent-color: #0075ff; 
+  cursor: pointer;
+}
+
+/* Black Send Button */
+.btn-send {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-send:hover {
+  background-color: #333333;
+}
