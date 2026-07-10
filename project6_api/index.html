@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Product Search</h2>
+
+        <input type="text" id="search" placeholder="Enter Product Name">
+
+        <button onclick="searchProduct()">Search</button>
+
+        <br><br>
+
+        <select id="sort" onchange="sortProduct()">
+            <option value="">Sort By</option>
+            <option value="low">Price Low to High</option>
+            <option value="high">Price High to Low</option>
+            <option value="rating">Rating</option>
+        </select>
+
+        <div id="products"></div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
